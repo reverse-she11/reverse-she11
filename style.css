@@ -1,15 +1,6 @@
-body {
-    background-color: RED;
-}
-
 #target {
-    width: 300px;
-    height: 200px;
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
+    margin: auto;
+    width: 75%;
 }
 
 iframe {
