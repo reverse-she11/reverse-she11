@@ -32,10 +32,14 @@
     
     let counter = 0
     const next = () => {
-      fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 800)
-      })
-      counter = (counter + 1) % phrases.length
+      if (counter < phrases.length) {
+        fx.setText(phrases[counter]).then(() => {
+          setTimeout(next, 800)
+        })
+        counter += 1
+      } else {
+        el.innerText = ""
+      }
     }
     
     next()
