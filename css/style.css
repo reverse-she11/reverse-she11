@@ -22,8 +22,8 @@ html, body {
   color: #757575;
 }
 
-/* asciinema player iframe */
-#asciinema-div {
+/* shellcode */
+#shellcode {
     margin: auto;
     width: 75%;
 }
