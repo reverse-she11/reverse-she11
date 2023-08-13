@@ -31,17 +31,16 @@
         const el = document.querySelector('.text')
         const fx = new TextScramble(el)
         
+        let counter = 0
         const next = () => {
-            for (let counter = 0; counter < phrases.length; counter++) {
+        
+        for (counter = 0; counter < phrases.length; counter++) {
                 fx.setText(phrases[counter]).then(() => {
                     setTimeout(next, 800)
                 })
             }
         }
         
-        next()
-        
-        el.innerText = ""
     </script>
 
     <div id="asciinema-div">
