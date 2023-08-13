@@ -34,14 +34,16 @@
         let counter = 0
         
         const next = () => {
-        
-        for (counter = 0; counter < phrases.length; counter++) {
+            if (counter < phrases.length) {
                 fx.setText(phrases[counter]).then(() => {
                     setTimeout(next, 800)
                 })
+                counter += 1
+            } else {
+                el.innerText = ""
             }
         }
-
+        
         next()
         
     </script>
